@@ -1,0 +1,94 @@
+.hero-section {
+  background-color: blueviolet;
+  background: url(../../assets/img/bg/hero-section-bg.png) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px 0 150px 0;
+  position: relative;
+}
+
+.hero-section__content {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section__text {
+  text-align: left;
+  flex: 1;
+}
+
+.hero-section__text h1 {
+  color: #ff14b1;
+}
+
+.hero-section__text h2 {
+  font-family: "GeoramaBold";
+  font-size: 52px;
+  color: #000;
+}
+
+.hero-section__text p {
+  font-size: 30px;
+  font-family: "GeoramaBold";
+  color: #000;
+  margin-top: 40px;
+}
+
+.hero-section__img-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-section__img-wrapper img {
+  width: 400px;
+}
+
+.hero-section__bottom-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: -1px;
+}
+
+.hero-section__bottom-shape svg {
+  height: 80px;
+  transform: translateX(-50%) rotateY(180deg);
+  display: block;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  z-index: -1;
+}
+
+.hero-section__bottom-shape svg {
+  fill: #2a1752;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hero-section__content {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .hero-section__text {
+    text-align: center;
+  }
+  .hero-section__img-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section__img-wrapper img {
+    width: 300px;
+  }
+}

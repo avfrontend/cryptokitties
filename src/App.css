@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "GeoramaRegular";
+  src: local("GeoramaRegular"),
+    url("./assets/fonts/Georama/Georama-Regular.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "GeoramaBold";
+  src: local("GeoramaBold"),
+    url("./assets/fonts/Georama/Georama-Bold.ttf") format("truetype");
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "GeoramaMedium";
+  src: local("GeoramaMedium"),
+    url("./assets/fonts/Georama/Georama-Medium.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  box-sizing: border-box;
+  font-family: "GeoramaRegular", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.btn--primary {
+  background: #ff14b1;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 70px;
+  font-size: 18px;
+}
+
+.btn--secondary {
+  background: #f2f2f2;
+  color: #ff14b1;
+  padding: 10px 60px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.btn--secondary:hover {
+  color: #ff14b1;
+}
+
+.section-title {
+  font-family: "GeoramaBold";
+  font-size: 76px;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.btn-wallet {
+  border-radius: 10px;
+  background: #000000;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-wallet:hover {
+  transition: all 0.2s ease-in-out;
+  background: #000;
+  color: #fff;
+}
+
+.btn-wallet:after {
+  content: url("./assets/img/icon/star-button.png");
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 48px;
   }
 }

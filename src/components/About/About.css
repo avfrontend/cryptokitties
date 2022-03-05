@@ -1,0 +1,83 @@
+.about-section {
+  background: #2a1752;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.about-section__img-wrapper {
+  position: absolute;
+  bottom: 0;
+}
+
+.about-section__img-wrapper img {
+  width: 550px;
+}
+
+.about-section__text {
+  text-align: center;
+}
+
+.about-section__text h2 {
+  color: #ff14b1;
+}
+
+.about-section__text h2 span {
+  color: #fff;
+  font-family: "GeoramaBold";
+}
+
+.about-section__text p {
+  margin-top: 20px;
+  color: #fff;
+  text-align: left;
+}
+
+.about-section__bottom-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  bottom: -1px;
+}
+
+.about-section__bottom-shape svg {
+  height: 80px;
+  transform: translateX(-50%) rotateY(180deg);
+  display: block;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  z-index: -1;
+}
+
+.about-section__bottom-shape svg {
+  fill: pink;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about-section {
+    padding-bottom: 0;
+  }
+  .about-section__img-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  .about-section__bottom-shape {
+    display: none;
+  }
+  .about-section__text p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section__img-wrapper img {
+    width: 300px;
+  }
+}
