@@ -11,6 +11,7 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
+  NavBtnLink
 } from "./NavbarElements";
 
 function Navbar({ toggle }) {
@@ -97,13 +98,9 @@ function Navbar({ toggle }) {
               </NavItem>
             </NavMenu>
             <NavBtn>
-            <a
-            href="/#"
-            className="btn-wallet"
-            id="connect-wallet"
-          >
-            Connect Wallet
-          </a>
+            <NavBtnLink to="/">
+              Connect Wallet
+            </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

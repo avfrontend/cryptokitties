@@ -34,63 +34,14 @@ li {
   padding: 0;
 }
 
-.btn--primary {
-  background: #ff14b1;
-  color: #fff;
-  border-radius: 10px;
-  border: none;
-  padding: 10px 70px;
-  font-size: 18px;
-}
-
-.btn--secondary {
-  background: #f2f2f2;
-  color: #ff14b1;
-  padding: 10px 60px;
-  border-radius: 10px;
-  display: inline-block;
-  font-size: 18px;
-}
-
-.btn--secondary:hover {
-  color: #ff14b1;
-}
-
-.section-title {
-  font-family: "GeoramaBold";
-  font-size: 76px;
-}
-
 ul,
 li {
   list-style-type: none;
 }
 
-.btn-wallet {
-  border-radius: 10px;
-  background: #000000;
-  white-space: nowrap;
-  padding: 10px 22px;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-}
-
-.btn-wallet:hover {
-  transition: all 0.2s ease-in-out;
-  background: #000;
-  color: #fff;
-}
-
-.btn-wallet:after {
-  content: url("./assets/img/icon/star-button.png");
-  padding-left: 5px;
-  display: inline-block;
-  vertical-align: middle;
+.section-title {
+  font-family: "GeoramaBold";
+  font-size: 76px;
 }
 
 @media only screen and (max-width: 768px) {

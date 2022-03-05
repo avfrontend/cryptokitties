@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components/macro";
+import { Link } from "react-router-dom";
 
 const MintBtns = styled.div`
 display: flex;
@@ -22,25 +23,39 @@ const MintBtnsItem = styled.div`
 }
 `
 
+const MintBtnPrimary = styled.button`
+	background: #ff14b1;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 70px;
+	font-size: 18px;
+`
+
+const MintBtnSecondary = styled(Link)`
+  background: #f2f2f2;
+  color: #ff14b1;
+  padding: 10px 60px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 18px;
+  &:hover {
+	color: #ff14b1;
+  }
+`
+
 function Mint() {
   return (
      <MintBtns>
 		<MintBtnsItem>
-			<button
-				className="btn--primary"
-			>
+			<MintBtnPrimary>
 				Mint
-			</button>
+			</MintBtnPrimary>
         </MintBtnsItem>
         <MintBtnsItem>
-			<a
-				className="btn--secondary"
-				href="https://testnets.opensea.io/collection/ugly-turbo-2"
-				target="_blank"
-				rel="noreferrer"
-			>
+			<MintBtnSecondary to="/">
 				OpenSea
-			</a>
+			</MintBtnSecondary>
         </MintBtnsItem>
      </MintBtns>
   )

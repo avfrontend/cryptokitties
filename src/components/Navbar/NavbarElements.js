@@ -2,6 +2,7 @@ import styled from "styled-components/macro";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import starIcon from "../../assets/img/icon/star-nav-icon.png";
+import starBtnIcon from "../../assets/img/icon/star-button.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
@@ -97,5 +98,30 @@ export const NavBtn = styled.nav`
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const NavBtnLink = styled(LinkR)`
+  border-radius: 10px;
+  background: #000000;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #000;
+    color: #fff;
+  }
+  &:after {
+    content: url(${starBtnIcon});
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
   }
 `;

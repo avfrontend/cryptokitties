@@ -39,11 +39,9 @@ const FooterSocialItem = styled.div`
     a {
        display: inline-block
     }
-    @media only screen and (max-width: 1199px) {
-        img {
+    img {
             width: 150px;
         }
-    }
     @media only screen and (max-width: 991px) {
         img {
             width: 100px;
