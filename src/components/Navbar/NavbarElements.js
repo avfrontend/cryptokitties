@@ -41,6 +41,9 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   font-family: "GeoramaBold";
+  &:hover {
+    color: #f31db2;
+  }
 `;
 
 export const MobileIcon = styled.div`

@@ -3,24 +3,24 @@ import styled from "styled-components/macro";
 import { Link } from "react-router-dom";
 
 const MintBtns = styled.div`
-display: flex;
+  display: flex;
 
-@media only screen and (max-width: 1199px) {
-    justify-content: center;
-}
-@media only screen and (max-width: 575px) {
-    flex-direction: column;
-}
+  @media only screen and (max-width: 1199px) {
+      justify-content: center;
+  }
+  @media only screen and (max-width: 575px) {
+      flex-direction: column;
+  }
 `
 
 const MintBtnsItem = styled.div`
-&:first-child{
-    margin-right: 10px;
-}
-@media only screen and (max-width: 575px) {
-    margin-right: 0;
-    margin-bottom: 10px;;
-}
+  &:first-child{
+      margin-right: 10px;
+  }
+  @media only screen and (max-width: 575px) {
+      margin-right: 0;
+      margin-bottom: 10px;;
+  }
 `
 
 const MintBtnPrimary = styled.button`
@@ -46,18 +46,18 @@ const MintBtnSecondary = styled(Link)`
 
 function Mint() {
   return (
-     <MintBtns>
-		<MintBtnsItem>
-			<MintBtnPrimary>
-				Mint
-			</MintBtnPrimary>
-        </MintBtnsItem>
-        <MintBtnsItem>
-			<MintBtnSecondary to="/">
-				OpenSea
-			</MintBtnSecondary>
-        </MintBtnsItem>
-     </MintBtns>
+    <MintBtns>
+      <MintBtnsItem>
+        <MintBtnPrimary>
+          Mint
+        </MintBtnPrimary>
+      </MintBtnsItem>
+      <MintBtnsItem>
+        <MintBtnSecondary to="/">
+          OpenSea
+        </MintBtnSecondary>
+      </MintBtnsItem>
+    </MintBtns>
   )
 }
 

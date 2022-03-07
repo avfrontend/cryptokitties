@@ -2,6 +2,8 @@ import React from 'react'
 import styled from "styled-components/macro";
 import {Social} from "./Social"
 import footerBg from '../../assets/img/bg/hero-section-bg.png';
+import titleAfter from '../../assets/img/icon/footer-title-after.png';
+import titleBefore from '../../assets/img/icon/footer-title-before.png';
 
 const FooterSection = styled.div`
     background:url(${footerBg}), #000;
@@ -22,8 +24,30 @@ const FooterWrapper = styled.div`
 `
 
 const FooterContent = styled.div`
-    color: #fff;
     text-align: center;
+`
+
+const FooterTitle = styled.h2`
+    color: #fff;
+    position: relative;
+    &:after {
+        content: url(${titleAfter})
+    }
+    &:before {
+        content: url(${titleBefore});
+        position: absolute;
+        left: 190px;
+        bottom: -30px;
+    }
+    @media only screen and (max-width: 991px) {
+        &:before {
+            display:none;
+        }
+        &:after {
+            display:none;
+        }
+    }
+
 `
 
 const FooterSocialWrapper = styled.div`
@@ -59,9 +83,9 @@ function Footer() {
       <FooterSection>
           <FooterWrapper>
               <FooterContent>
-                <h2 className='section-title'>
+                  <FooterTitle className='section-title'>
                     Contacts
-                </h2>
+                  </FooterTitle>
                 <FooterSocialWrapper>
                     {Social.map((social) =>[
                         <FooterSocialItem  key={social.id}>
